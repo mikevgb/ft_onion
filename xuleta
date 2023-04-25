@@ -1,0 +1,2 @@
+docker ps
+ssh -p 4242 newuser@0.0.0.0

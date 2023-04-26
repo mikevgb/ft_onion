@@ -1,2 +1,13 @@
 docker ps
-ssh -p 4242 newuser@0.0.0.0
+ssh -p 4242 tor@0.0.0.0
+
+#if ssh fails
+ssh-keygen -R <hostIPaddress>
+#if this fails
+rm /Users/mvillaes/.ssh/known_hosts
+
+#entrar en el container de docker de manera local
+docker exec -it toror /bin/bash
+
+#copy file from docker container
+docker cp toror:/etc/ssh/sshd_config ./

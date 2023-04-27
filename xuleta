@@ -1,5 +1,5 @@
 docker ps
-ssh -p 4242 tor@0.0.0.0
+ssh -p 4242 toradmin@0.0.0.0
 
 #if ssh fails
 ssh-keygen -R <hostIPaddress>

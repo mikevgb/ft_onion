@@ -2,5 +2,5 @@
 
 service ssh start
 tor -f /etc/tor/torrc &
-sleep 20
+sleep 10
 nginx -g 'daemon off;'
